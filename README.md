@@ -21,3 +21,4 @@ python gradebook.py students.csv
 
 - **`exercises/indoor/indoor.py`**: Asks for text and prints it in lowercase.
 - **`exercises/tip/tip.py`**: Asks for two helper functions that convert the meal cost and tip percentage, then calculates the tip.
+- **`exercises/bank/bank.py`**: It checks a greeting and prints $0, $20, or $100.
