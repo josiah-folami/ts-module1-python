@@ -1,29 +1,53 @@
 # ts-module1-python
 
 ## About Me
+
 Hi, I'm **Folasayomi Udofia**, a learner in the **[TS Academy](https://app.tsacademyonline.com/enrollments)** Data Science Programme (Module 01: Python for Data Science).
-# Gradebook
 
-A Python program that reads student scores from a CSV file, calculates class statistics, and saves a sorted report.
+## Project contents
 
-## Files
+### Gradebook
 
-- `gradebook.py` — reads the scores, assigns letter grades, prints statistics, and writes the report.
-- `students.csv` — sample input file. Rows with scores that are not numbers are skipped with a warning.
-- `report.txt` — generated output, sorted from highest score to lowest.
+The `gradebook/` folder contains the Gradebook assignment:
+
+- `gradebook/gradebook.py` reads student scores from a CSV file, assigns letter grades, prints the class count, mean, median, highest and lowest scores, and writes a report sorted by score.
+- `gradebook/students.csv` is the sample input. Rows with non-numeric scores are skipped with a warning.
+- `gradebook/report.txt` is the generated report.
+
+### Exercises
+
+Each short exercise is in its own folder under `exercises/`:
+
+- `exercises/indoor/indoor.py` asks for text and prints it in lowercase.
+- `exercises/tip/tip.py` calculates a tip from a meal cost and tip percentage.
+- `exercises/bank/bank.py` prints `$0`, `$20`, or `$100` based on the greeting.
+- `exercises/coke/coke.py` accepts 25-, 10-, and 5-cent coins for a 50-cent drink and reports the amount due or change owed.
+- `exercises/fuel/fuel.py` converts a fraction to a percentage and prints `E` or `F` for very low or very high fuel levels.
+- `exercises/lines/lines.py` counts nonblank, noncomment lines in a Python file.
+- `exercises/scores/scores.py` reads `scores.csv` and prints the mean, median, highest-scoring student, and lowest-scoring student.
+- `exercises/scores/scores.csv` contains the sample scores for `scores.py`.
 
 ## How to run
 
-From this folder, run:
+Run the exercise commands from the repository's top-level folder:
 
 ```bash
-python gradebook/gradebook.py students.csv
+python exercises/indoor/indoor.py
+python exercises/tip/tip.py
+python exercises/bank/bank.py
+python exercises/coke/coke.py
+python exercises/fuel/fuel.py
+python exercises/lines/lines.py gradebook/gradebook.py
+python exercises/scores/scores.py
+```
 
-- **`exercises/indoor/indoor.py`**: Asks for text and prints it in lowercase.
-- **`exercises/tip/tip.py`**: Asks for two helper functions that convert the meal cost and tip percentage, then calculates the tip.
-- **`exercises/bank/bank.py`**: It checks a greeting and prints $0, $20, or $100.
-- **`exercises/coke/coke.py`**: It handles a 50-cent drink, accepts 25-, 10-, and 5-cent coins, shows the amount still due after each coin, then shows any change.
-- **`exercises/fuel/fuel.py`**: It asks for a fraction, converts it to a percentage, prints E when it’s 1% or less and F when it’s 99% or more, and handles invalid input.
-- **`exercises/lines/lines.py`**: It counts nonblank, noncomment lines in a .py file given on the command line.
-- **`exercises/scores/scores.cv`**: It contains the scores needed for the scores.py program.
-- ***`exercises/scores/scores.py`*: It reads scores.csv and reports the mean, median, highest-scoring student, and lowest-scoring student.
+For `lines.py`, replace `gradebook/gradebook.py` with the `.py` file you want to count.
+
+To run Gradebook, first change into its folder, then run it with the sample CSV:
+
+```bash
+cd gradebook
+python gradebook.py students.csv
+```
+
+The Gradebook program writes `report.txt` in the current folder.
