@@ -18,3 +18,5 @@ From this folder, run:
 
 ```bash
 python gradebook.py students.csv
+
+- **`exercises/indoor/indoor.py`**: Asks for text and prints it in lowercase.
