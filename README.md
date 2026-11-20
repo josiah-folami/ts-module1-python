@@ -25,3 +25,5 @@ python gradebook.py students.csv
 - **`exercises/coke/coke.py`**: It handles a 50-cent drink, accepts 25-, 10-, and 5-cent coins, shows the amount still due after each coin, then shows any change.
 - **`exercises/fuel/fuel.py`**: It asks for a fraction, converts it to a percentage, prints E when it’s 1% or less and F when it’s 99% or more, and handles invalid input.
 - **`exercises/lines/lines.py`**: It counts nonblank, noncomment lines in a .py file given on the command line.
+- **`exercises/scores/scores.cv`**: It contains the scores needed for the scores.py program.
+- ***`exercises/scores/scores.py`*: It reads scores.csv and reports the mean, median, highest-scoring student, and lowest-scoring student.
