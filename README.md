@@ -17,7 +17,7 @@ A Python program that reads student scores from a CSV file, calculates class sta
 From this folder, run:
 
 ```bash
-python gradebook.py students.csv
+python gradebook/gradebook.py students.csv
 
 - **`exercises/indoor/indoor.py`**: Asks for text and prints it in lowercase.
 - **`exercises/tip/tip.py`**: Asks for two helper functions that convert the meal cost and tip percentage, then calculates the tip.
